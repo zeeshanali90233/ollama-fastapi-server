@@ -46,6 +46,7 @@ A simple and efficient FastAPI server that provides a REST API interface for int
 3. **Wait for services to initialize** (approximately 30 seconds)
 
 4. **Update the model in main.py** if needed:
+    main.py
    ```python
    llm = OllamaLLM(
        model="gemma:2b",  # Change to your downloaded model
@@ -54,6 +55,7 @@ A simple and efficient FastAPI server that provides a REST API interface for int
        base_url=ollama_base_url,
    )
    ```
+   docker-compose.yml
     ```yml
         command:
         - |
